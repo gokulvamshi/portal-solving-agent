@@ -1,0 +1,14 @@
+CCBP Local Practice Helper v0.4.0 - Coding mode
+
+UPGRADE
+Stop the helper. At chrome://extensions, Reload the helper and accept any Chrome permission notice for scripting on learning.ccbp.in. Refresh the practice tab. You do not need to reinstall Ollama or change the extension ID when updating the same folder.
+
+USE
+Open either an MCQ practice or a coding problem, then Start automatic practice. Mode is detected from the page. Coding mode currently supports Python only. Keep the Description tab visible when starting. It generates a complete general solution, preserving starter-code requirements, writes through the editor API (no clipboard paste), verifies the write, runs visible cases, and submits only after the visible cases pass. Submission passed/total counts determine completion. Failed feedback is used for up to five attempts; unchanged failed code stops early. It solves the current coding problem only; open the next problem yourself.
+
+Stop cancels further actions after the pending operation returns; an in-flight site run/submission may still finish. Avoid manual code edits while running. A session-only backup is saved under ccbp-helper-backup:<page URL> in the page sessionStorage before the first write. Restarting the run replaces that backup with the then-current editor contents.
+
+LIMITS AND VALIDATION
+This coding adapter is experimental. The local code-generation and mocked editor protections were tested. The live coding editor API and result-panel adapter still require a first-run check. It stops with an error if it cannot identify the editor, language, fresh test results, or passed/total count. A previous Solved badge alone does not establish success. It cannot see hidden inputs unless the portal displays them. It cannot guarantee correct code for every problem. Image-based statements and non-Python languages are not supported in coding mode.
+
+The included PDF documents initial Ollama/Chrome setup for v0.3; those setup steps still apply. This note describes v0.4 coding additions. Existing MCQ behavior remains Start/Stop with no question-count limit.
