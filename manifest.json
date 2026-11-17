@@ -1,11 +1,13 @@
 {
   "manifest_version": 3,
   "name": "CCBP Local Practice Helper",
-  "version": "0.4.0",
+  "version": "0.8.1",
   "description": "Local Ollama practice assistant with Start and Stop controls.",
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "storage",
+    "offscreen"
   ],
   "host_permissions": [
     "http://localhost:11434/*",
@@ -15,7 +17,7 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "popup.html"
+    "default_title": "Open Practice Helper"
   },
   "content_scripts": [
     {
@@ -23,9 +25,23 @@
         "https://learning.ccbp.in/*"
       ],
       "js": [
+        "shared.js",
+        "assets.js",
+        "web-coding.js",
         "coding.js",
-        "content.js"
+        "content.js",
+        "navigation.js",
+        "subjects.js",
+        "controller.js"
       ]
     }
-  ]
+  ],
+  "options_page": "dashboard.html",
+  "minimum_chrome_version": "116",
+  "optional_host_permissions": [
+    "https://*/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  }
 }

@@ -1,0 +1,184 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 8 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 3121 >>
+stream
+q
+1 w
+0.08 0.13 0.24 rg
+0 745 595.28 97 re
+f
+Q
+BT /F2 19 Tf 1 1 1 rg 45 808 Td (CCBP LOCAL PRACTICE HELPER) Tj ET
+BT /F1 12 Tf 0.75 0.85 0.98 rg 45 788 Td (Complete Setup Guide \(Windows / Mac / Linux\)) Tj ET
+BT /F1 9.5 Tf 0.6 0.7 0.82 rg 45 768 Td (Step-by-step instructions to set up and run on any laptop) Tj ET
+q
+1 w
+0.15 0.25 0.45 rg
+0.3 0.45 0.7 RG
+440 775 110 24 re
+B
+Q
+BT /F2 9 Tf 1 1 1 rg 462 783 Td (VERSION 0.7.4) Tj ET
+q
+1 w
+0.96 0.97 0.99 rg
+0.85 0.88 0.94 RG
+45 692 505.28 30 re
+B
+Q
+BT /F2 10 Tf 0.15 0.25 0.45 rg 58 708 Td (PREREQUISITES) Tj ET
+BT /F1 9.5 Tf 0.2 0.25 0.35 rg 165 708 Td (1. Google Chrome Browser       2. Ollama Installed       3. CCBP-Helper folder) Tj ET
+q
+1 w
+0.12 0.28 0.65 rg
+45 652 22 22 re
+f
+Q
+BT /F2 12 Tf 1 1 1 rg 52 657 Td (1) Tj ET
+BT /F2 13 Tf 0.1 0.15 0.25 rg 75 658 Td (Install Ollama & Download the Model) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 55 640 Td (1. Download and run the Ollama installer from https://ollama.com/download/windows) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 55 624 Td (2. Open PowerShell or Command Prompt on your computer.) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 55 608 Td (3. Run the following command to download the high-speed Qwen 3.5 9B model:) Tj ET
+q
+1 w
+0.94 0.95 0.97 rg
+0.82 0.85 0.9 RG
+55 574 485 38 re
+B
+Q
+BT /F2 8.5 Tf 0.35 0.4 0.5 rg 65 600 Td (TERMINAL COMMAND) Tj ET
+BT /F3 9.5 Tf 0.12 0.16 0.24 rg 67 584 Td (ollama run qwen3.5:9b) Tj ET
+BT /F1 9 Tf 0.35 0.4 0.45 rg 55 552 Td (4. Once it displays "Success" and shows ">>>", type /bye and press Enter to exit chat.) Tj ET
+BT /F1 9 Tf 0.35 0.4 0.45 rg 55 538 Td (   Ollama will continue running quietly in your Windows taskbar system tray.) Tj ET
+q
+1 w
+0.12 0.28 0.65 rg
+45 488 22 22 re
+f
+Q
+BT /F2 12 Tf 1 1 1 rg 52 493 Td (2) Tj ET
+BT /F2 13 Tf 0.1 0.15 0.25 rg 75 494 Td (Configure Ollama Permissions \(One-Time Setup\)) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 55 480 Td (By default, Ollama blocks browser extensions. You must allow extension access:) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 55 462 Td (A. Press the Windows Key and search for: "Environment Variables".) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 55 447 Td (B. Click "Edit the system environment variables" -> Click "Environment Variables...".) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 55 432 Td (C. Under "User variables for <your name>", click New... and enter:) Tj ET
+q
+1 w
+0.94 0.95 0.97 rg
+0.82 0.85 0.9 RG
+55 384 485 54 re
+B
+Q
+BT /F2 8.5 Tf 0.35 0.4 0.5 rg 65 426 Td (USER ENVIRONMENT VARIABLE) Tj ET
+BT /F3 9.5 Tf 0.12 0.16 0.24 rg 67 410 Td (Variable name :  OLLAMA_ORIGINS) Tj ET
+BT /F3 9.5 Tf 0.12 0.16 0.24 rg 67 394 Td (Variable value:  *) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 55 362 Td (D. Click OK -> OK to save.) Tj ET
+BT /F2 9.5 Tf 0.8 0.15 0.1 rg 55 347 Td (E. Restart Ollama: Right-click the Ollama icon in the Taskbar Tray -> click Quit Ollama.) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 55 332 Td (   Then search "Ollama" in the Start Menu and launch it again so the new variable takes effect.) Tj ET
+BT /F1 8 Tf 0.5 0.5 0.5 rg 45 25 Td (CCBP Local Practice Helper | Setup Guide) Tj ET
+BT /F1 8 Tf 0.5 0.5 0.5 rg 510 25 Td (Page 1 of 2) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 10 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> >>
+endobj
+10 0 obj
+<< /Length 3668 >>
+stream
+q
+1 w
+0.08 0.13 0.24 rg
+0 775 595.28 67 re
+f
+Q
+BT /F2 15 Tf 1 1 1 rg 45 810 Td (CCBP LOCAL PRACTICE HELPER) Tj ET
+BT /F1 10 Tf 0.75 0.85 0.98 rg 45 792 Td (Installation in Chrome & Automation Instructions) Tj ET
+q
+1 w
+0.12 0.28 0.65 rg
+45 727 22 22 re
+f
+Q
+BT /F2 12 Tf 1 1 1 rg 52 732 Td (3) Tj ET
+BT /F2 13 Tf 0.1 0.15 0.25 rg 75 733 Td (Install the Extension in Google Chrome) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 55 715 Td (1. Open Google Chrome on the laptop.) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 55 699 Td (2. In the Chrome address bar, navigate to: chrome://extensions and press Enter.) Tj ET
+BT /F2 9.5 Tf 0.1 0.2 0.5 rg 55 683 Td (3. In the top-right corner, toggle ON "Developer mode".) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 55 667 Td (4. In the top-left corner, click the "Load unpacked" button.) Tj ET
+BT /F2 9.5 Tf 0.1 0.2 0.5 rg 55 651 Td (5. Select the folder named ccbp-local-helper \(which contains manifest.json\).) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 55 635 Td (6. The extension "CCBP Local Practice Helper" will appear in your extensions list.) Tj ET
+q
+1 w
+0.12 0.28 0.65 rg
+45 585 22 22 re
+f
+Q
+BT /F2 12 Tf 1 1 1 rg 52 590 Td (4) Tj ET
+BT /F2 13 Tf 0.1 0.15 0.25 rg 75 591 Td (How to Use & Automate on NxtWave Portal) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 55 577 Td (1. In Chrome, open https://learning.ccbp.in and log into your NxtWave student account.) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 55 561 Td (2. Open the Extension Dashboard by clicking the puzzle/extension icon in Chrome,) Tj ET
+BT /F3 8.5 Tf 0.25 0.35 0.55 rg 55 547 Td (   or by opening the dashboard tab directly: chrome-extension://<id>/dashboard.html) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 55 531 Td (3. Under "Run controls", select your NxtWave learning portal tab from the dropdown.) Tj ET
+BT /F2 9.5 Tf 0.1 0.15 0.25 rg 55 515 Td (4. Under "Automation scope", pick what you want to solve:) Tj ET
+BT /F1 9 Tf 0.2 0.2 0.2 rg 60 499 Td (   • All incomplete problems in this coding list : Solves all unsolved coding problems in the practice list.) Tj ET
+BT /F1 9 Tf 0.2 0.2 0.2 rg 60 485 Td (   • All incomplete MCQ + coding practices in this course : Solves all practices across course modules.) Tj ET
+BT /F1 9 Tf 0.2 0.2 0.2 rg 60 471 Td (   • Current practice only : Solves only the question or practice currently on screen.) Tj ET
+BT /F2 10 Tf 0.1 0.35 0.8 rg 55 453 Td (5. Click the blue "Start" button.) Tj ET
+BT /F1 9 Tf 0.25 0.25 0.25 rg 55 439 Td (   The extension will automatically navigate, solve MCQs in ~3s, generate and test Python solutions,) Tj ET
+BT /F1 9 Tf 0.25 0.25 0.25 rg 55 426 Td (   and auto-submit 100% passing testcases without manual intervention.) Tj ET
+q
+1 w
+0.97 0.98 1 rg
+0.8 0.85 0.92 RG
+45 288 505.28 120 re
+B
+Q
+BT /F2 10.5 Tf 0.15 0.25 0.5 rg 58 394 Td (TROUBLESHOOTING & FAST FIXES) Tj ET
+BT /F1 8.5 Tf 0.2 0.2 0.2 rg 58 376 Td (• "Ollama blocked this extension" -> Repeat Step 2: add OLLAMA_ORIGINS=* and restart Ollama.) Tj ET
+BT /F1 8.5 Tf 0.2 0.2 0.2 rg 58 361 Td (• "Model not installed" -> Open Terminal and run: ollama run qwen3.5:9b) Tj ET
+BT /F1 8.5 Tf 0.2 0.2 0.2 rg 58 346 Td (• "Receiving end does not exist" -> Simply click on the NxtWave portal tab and press F5 \(refresh\).) Tj ET
+BT /F1 8.5 Tf 0.2 0.2 0.2 rg 58 331 Td (• Quizzes skipped -> Classroom quizzes are intentionally excluded; only real practice exercises are solved.) Tj ET
+BT /F1 8.5 Tf 0.2 0.2 0.2 rg 58 316 Td (• Speed check -> Ensure "Enable model thinking" is UNCHECKED for maximum instant solving speed \(~3s\).) Tj ET
+BT /F1 8 Tf 0.5 0.5 0.5 rg 45 25 Td (CCBP Local Practice Helper | Setup Guide) Tj ET
+BT /F1 8 Tf 0.5 0.5 0.5 rg 510 25 Td (Page 2 of 2) Tj ET
+endstream
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000266 00000 n 
+0000000334 00000 n 
+0000000407 00000 n 
+0000000569 00000 n 
+0000003741 00000 n 
+0000003904 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R >>
+startxref
+7624
+%%EOF
